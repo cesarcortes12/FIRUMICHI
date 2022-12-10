@@ -27,13 +27,13 @@
 }
 .container_grid .trescuadros:nth-child(3) /*cuadros 3 juntos*/
 {
-    border: solid red 4px;
+   
     grid-area: 2/2/5/7;
     background-color: #D9D9D9;
 }
 .container_grid .uncuadro:nth-child(4) /*cuaro solo*/
 {
-    border: solid red 4px;
+   
     grid-area: 5/2/8/7;
     background-color: #D9D9D9;
 }
@@ -78,4 +78,58 @@
     text-align: center;
     color: #FA991C;
     
+}
+/*FIN ESTILOS NAV*/
+
+/*INICIO ESTILOS TRES CUADROS*/
+
+.trescuadros{
+    display: flex;
+    justify-content: space-around;
+}
+
+.trescuadros .cuadro{
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+.trescuadros .cuadro img{
+    width: 100%;
+    border-radius: 25px;
+}
+.trescuadros .cuadro p{
+    font-family: 'Irish Grover', cursive;
+    font-size: 48px;
+    color: #FA991C;
+    text-align: center;
+}
+.trescuadros .cuadro #img1{
+   object-fit: cover;
+    height: 200px;
+    
+}
+
+.uncuadro .cuadro
+{
+    width: 300px;
+    height: 250px;
+    background-color:white;
+    border-radius: 10px;
+    border-radius: 10px;
+    margin-left: 35px;
+}
+.uncuadro .cuadro #img1{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 25px;
+    
+}
+.uncuadro .cuadro p{
+    font-family: 'Irish Grover', cursive;
+    font-size: 48px;
+    color: #FA991C;
+    text-align: center;
 }
