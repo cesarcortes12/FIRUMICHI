@@ -58,7 +58,7 @@ a:hover{
     margin: 10px;
 }
 .div{
-    padding: 20px;
+    padding:20px;
 }
 h1{
     padding: 20px;
@@ -66,8 +66,10 @@ h1{
 }
 /*desde aca comienza la seccion1*/
 .sec1{
+    width: 100%;
     padding:20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
    
 }
@@ -96,6 +98,7 @@ h2{
 }
 /*desde aca seccion2*/
 .sec2{
+    width:100%;
     padding:30px;
     display: flex;
     justify-content: space-around;
@@ -124,7 +127,7 @@ h3{
 }
 /**desdec aca seccion 3*/
 .sec3{
-    
+    width:100%;
     padding:20px;
     display: flex;
     justify-content: space-around;
@@ -164,6 +167,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
    
 }
 .imagenfoter{
