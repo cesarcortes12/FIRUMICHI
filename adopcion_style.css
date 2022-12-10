@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 18.2vh;
+    background-color:#FA991C ;
+}
+/*inicio estilos menu y logo pequeno*/
+.sec1{
+    display: flex;
+    flex-direction:row;
+    width: 20%;
+    height: 20vh;
+    justify-content: space-between;
+    
+}
+
+.icomenu{
+    padding:40px;
+    width:50px;
+    height:50px;  
+}
+
+span{
+    color: black;
+    font-size: 30px !important;
+}
+   /* .material-symbols-outlined {
+        color: black;
+        background-color:#FBF3F2 ;
+        border-radius: 3px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 800,
+    'GRAD' 0,
+    'opsz' 48,
+
+    }*/
+
+.logo_peq{
+    width: 110%;
+    height: 90%;
+    min-width: 90%;
+    border-radius: 10PX;
+   
+}
+/*aqui terminan estilos de menu y logo */
+
+/*INICIO ESTILOS 4 BOTONES DEL NAV inicio,nosotros....*/
+.sec2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    height: 20vh;
+    
+}
+.cuatroboton{
+        
+        width:66px;
+        height:20px;
+        text-align: center;
+        margin: 20px;
+        border-radius: 3px;
+        color: #FBF3F2;        
+}
+/*FIN ESTILOS 4 BOTONES Y NAV* /
+
+/*INICIO ESTILOS BODY*/
+
+.trescolumnas{
+    display: flex;
+    padding-top: 10px;
+    width: 100%;
+    height: 1000px;
+    background-color:#FBF3F2;
+    display:flex;
+   
+}
+/*organizacion primera columna con todos sus elementos */
+.colum1{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 800px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color:#1C768F;
+ 
+     
+}
+.perrito1{
+    width: 47%;
+    height: 20%;
+    margin-top: 10%;
+    margin-left: 45%;
+    /*width: 47%;
+    height: 20%;*/
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow:8px 10px 5px black;
+}
+.imgpe1{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 75%;
+    /*position: relative;
+    top: 0;
+    left: -70%;
+    height: 100%;  */
+}
+.perrito2{
+    margin-top: -15%;
+    margin-left: 1%;
+    width: 55%;
+    height: 40%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow:8px 10px 5px black; 
+}
+.imgpe2{
+    position: relative;
+    top: -27%;
+    left: -20%;
+    height: 140%; 
+}
+.perrito3{
+    width: 45%;
+    height: 22%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow:8px 10px 5px black; 
+    left: 45%;
+    top: -10%;
+}
+.imgpe3{
+    position: relative;
+    width: 160%;
+    height: 100%;
+}
+.perrito4{
+    width: 60%;
+    height: 22%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow:8px 10px 5px black; 
+    top:-12%;
+    left: 1%;
+}
+.imgpe4{
+    position:relative;
+    width: 110%;
+    height: 100%;
+    left: -5%;
+}
+/*finalizan estilos columna 1*/
+
+/*INICIAN ESTILOS COLUMNA 2*/
+
+
+.colum2{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    height: 800px;
+    background-color: #fffff0;
+}
+.adop{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    
+}
+.adop p{
+    font-family: 'Irish Grover', cursive;
+    font-size: 400%;
+    text-align:center;
+    color:#032539;
+}
+.cenadop p{
+    margin-left: 8.5%;
+    margin-top:40px;
+    font-size: 180%;
+    color:#032539;
+    
+}
+.secadop{ /*estolos para todas las secciones de adopcion*/
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.textadop{ /*estilos para todos los textos de adopcion*/
+    margin-top: 20px;
+    width: 50%;
+    height: auto;
+    color: #FA991C;
+    
+}
+.divadop{ /*dimension para todos los div de adop*/
+    width: 15%;
+    height: auto;
+    margin: 5px;
+}
+.logosadop{ /*estilos para tosdos los logos en adopcion*/
+    width: 100%;
+    height: 100%;
+}
+
+.testi_gal{
+    margin-top: 15%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 8%;
+    background-color: #032539;
+    border-radius: 15px;
+}
+.boton1{
+    text-align: center;
+    width: 20%;
+    height: 40%;
+    background-color: #FA991C;
+    border-radius: 10px;
+    font-size: 20px;
+}
+/*FIN ESTILOS COLUMNA 2*/
+
+/*INICIO ESTILOS COLUMNA 3*/
+
+
+.colum3{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 800px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color:#FA991C; 
+    
+}
+.gatico1{
+    width: 60%;
+    height: 22%;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow:8px 10px 5px black;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.imgga1{
+    height: 110%;
+    width: 110%;
+    object-fit: cover;
+    object-position: 35%;
+}
+.gatico2{
+    width: 55%;
+    height: 40%;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow:8px 10px 5px black;
+    margin-left: 43%;
+    margin-top: -10%;
+    
+}
+.imgga2{
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    
+}
+.gatico3{
+    width: 45%;
+    height: 22%;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow:8px 10px 5px black;
+    margin-left:7%;
+    margin-top: -28%;
+
+}
+.imgga3{
+    width: 128%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100%;   
+}
+.gatico4{
+    width: 60%;
+    height: 22%;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow:8px 10px 5px black; 
+    margin-top:-4%;
+    margin-left: 38%;
+}
+.imgga4{
+    width: 130%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 90%;
+}
+

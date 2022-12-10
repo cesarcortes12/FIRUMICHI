@@ -1,0 +1,287 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container_grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows:repeat(9,1fr);
+    gap: 10px;
+    background-color: #FBF3F2;
+}
+.container_grid :first-child{ /*nav*/ 
+    grid-area: 1/1/1/7; 
+}
+.container_grid .dibujo:nth-child(2)/* imagen y titulo*/
+{
+    
+    grid-area: 2/1/4/7;
+}
+.container_grid .columna1:nth-child(3) /*columna 1*/
+{
+    
+    grid-area: 4/1/8/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.container_grid .columna2:nth-child(4) /*columna2*/
+{
+   
+    grid-area: 4/3/8/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.container_grid .columna3:nth-child(5) /*columna3*/
+{
+   
+    grid-area: 4/5/8/7;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    background-color: #D9D9D9;
+    box-shadow: -6px 10px 5px #FF0000,-6px 10px 5px black;
+    border-radius: 10px;
+    
+}
+.container_grid .espaciado:nth-child(6) /*solo un espaciado*/
+{
+    grid-area: 8/1/9/7;
+}
+.container_grid .footer:nth-child(7) /*footer*/ 
+{
+    grid-area: 9/1/10/7;
+    width: 100%;
+    height: 100%;
+    background-color: #1C768F
+}
+
+/*INICIA ESTILOS NAV*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 18.2vh;
+    background-color:#FA991C ;
+    flex-wrap: wrap;
+}
+nav .sec1{
+    display: flex;
+    flex-direction:row;
+    width: 20%;
+    height: 20vh;
+    justify-content: space-between;
+    
+}
+nav .icomenu{
+    padding:40px;
+    width:50px;
+    height:50px;  
+}
+span{
+    color: black;
+    font-size: 30px !important;
+}
+nav .logo_peq{
+    width: 180px;
+    min-width: 180px; 
+    border-radius: 10PX;
+   
+}
+nav .sec2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    height: 20vh;
+    
+}
+nav .cuatroboton{
+        
+        width:66px;
+        height:20px;
+        text-align: center;
+        margin: 20px;
+        border-radius: 3px;
+        color: #FBF3F2;        
+}
+/*FINALIZA ESTILOS NAV*/
+
+/*COMIENZAN ESTILOS VECTOR Y TITULO*/
+.dibujo{
+    display: flex;
+}
+.dibujo .contenedor_img {
+    width: 460px;
+    overflow: hidden;
+   
+   
+}
+.dibujo img{
+    width: 490px;
+    object-fit: cover;
+    margin-top: -25px;
+}
+.vete{
+    
+    display: flex;
+    width: 400px;
+    height: 140px;
+    align-self: flex-end;  
+     
+}
+.vete p{
+    font-family: 'Irish Grover', cursive;
+    font-size: 480%;
+    color:#032539;
+    text-align: end;  
+    margin-top: 17px;
+}
+/* FIN ESTILOS VECTOR Y TITULO*/
+
+/*INICIO ESTILOS COLUMNA 1 IZQUIERDA*/
+
+.columna1{
+    display: flex;
+    justify-content: center;
+}
+.clinicas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#D9D9D9;
+    width : 300px;
+    height: 40PX;
+    border-radius: 15PX;
+    box-shadow: 8px 10px 5px #1C768F;
+    
+}
+.P2{ /*texto de urgencias*/
+    
+    color: red;
+    font-size: 25px;
+}
+.logoydire{ /* estilos logos y atributos */
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+}
+.logoydire img{
+    width: 115px;
+    height: 115px;
+    border-radius: 10px;
+    
+}
+.logoydire p::first-line{
+    color: black;
+}
+.logoydire p{
+    color: #FA991C;
+}
+
+/*ESTILOS COLUMNA 2*/
+.columna2
+{
+    display: flex;
+    justify-content: center;
+}
+.centros{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#D9D9D9;
+    width : 300px;
+    height: 40PX;
+    border-radius: 15PX;
+    box-shadow: 8px 10px 5px #FA991C;
+    
+}
+
+/*fin estilos coloumna 2*/
+
+/*inicio estios columna 3*/
+.numerosytextos{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+.columna3 .numerosytextos div{
+width: 100%;
+display: flex;
+justify-content:left;
+}
+
+
+.urge{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#FFFFFF;
+    opacity: 80%;
+    width : 350px;
+    height: 50PX;
+    border-radius: 15PX;
+    box-shadow: -8px 11px 10px #1C768F ,8px -10px 10px RED  ;
+    margin-top: 30px;
+    
+}
+.columna3 .urge p{
+    color: red;
+    font-size: 25px;
+    
+}
+.columna3 .numeros{
+   
+    font-family:'Irish Grover', cursive;
+    font-size: 50px;
+    color: red;
+    margin-right: 35px;
+    margin-top: -15px;
+    margin-left: 20px;
+}
+.columna3 .numerosytextos .texto{
+    text-align:justify ;
+    font-size: 20px;
+}
+#ambu{
+    width: 130px;
+    position:absolute;
+    align-self: center;
+    margin: 280px;
+}
+#goo
+ {
+    width: 100px;
+    position: absolute;
+    margin-left: 300px;
+    
+}
+
+/*fin estilos columna 3*/
+
+
+/*ESTILOS FOOTER*/
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer p{
+    color: #D9D9D9;
+}

@@ -1,0 +1,180 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/**dede aca comienza el nav*/
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 70
+}/**fon-zise para colocarle tamanño al icono y le adiciono import,
+ para que le valga madres la restriccion
+ 
+ padin : es hacia dentro ,,
+ mragin es hacia fuera..*/
+
+header{
+    
+    width:100%;
+    height: 10vh;
+    background-color: #FA991C;
+    display: flex;
+    color: #FBF3F2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.imaglogo{/*forma de la la imagen*/
+    width:100%;
+    height: 100%;
+     margin: 20px;
+     padding: 5px;
+}
+
+a{/**enlaces modulos*/
+    text-decoration: none;
+    color:#FBF3F2;
+}
+a:hover{
+    color:#1C768F;
+}
+.div:hover{/*este se elimina cuando tenga todo los vinculos*/
+    color:#1C768F;
+}
+.modulos{
+    padding: 20px;
+    display: flex;
+}
+.icono{/**esta clase es del icono y el logo para centrarlos y ajustarlos*/
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.div{
+    padding: 20px;
+}
+h1{
+    padding: 20px;
+    text-align: center;
+}
+/*desde aca comienza la seccion1*/
+.sec1{
+    padding:20px;
+    display: flex;
+    justify-content: space-around;
+   
+}
+h2{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+.seccion1{
+    background-color:#FBF3F2;
+    width:550px;
+    height:150px;
+    border-radius:26px;
+    padding: 15px;
+    box-shadow: 4px 6px 4px 6px rgba(3, 1, 1, 0.2);
+    text-align: justify;
+    height: fit-content;
+    
+}
+.seccion1:hover{
+    background-color:#FFD700;
+}
+.imagen1{
+    height: 150px;
+    width: 400px;
+}
+/*desde aca seccion2*/
+.sec2{
+    padding:30px;
+    display: flex;
+    justify-content: space-around;
+}
+.imagen2{
+    height: 150px;
+    width: 400px;
+}
+.seccion2{
+    background-color:#1C768F;
+    width:550px;
+    height: fit-content;/**para ajustar el texto a la acaja*/
+    border-radius:26px;
+    padding: 15px;
+    box-shadow: 4px 6px 4px 6px rgba(3, 1, 1, 0.2);
+    text-align: justify;
+}
+.seccion2:hover{
+    background-color:#e3e4e5 ;
+}
+
+h3{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+/**desdec aca seccion 3*/
+.sec3{
+    
+    padding:20px;
+    display: flex;
+    justify-content: space-around;
+   
+}
+h4{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+.seccion3{
+    background-color:#032539;
+    width:550px;
+    height:150px;
+    border-radius:26px;
+    padding: 15px;
+    box-shadow: 4px 6px 4px 6px rgba(3, 1, 1, 0.2);
+    text-align: justify;
+    color: #FBF3F2;
+    height: fit-content;
+}
+.seccion3:hover{
+    background-color:#CD7F32 ;
+}
+.imagen3{
+    height: 150px;
+    width: 200px;
+}
+
+/*aca empieza el footer*/
+
+footer{
+    width:100%;
+    height: 10vh;
+    background-color: #1C768F;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+.imagenfoter{
+    padding: 10px;
+    width: 50px;
+    height: 50px; 
+}
+
+
+
+
+
+
+    
