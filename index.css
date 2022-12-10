@@ -1,0 +1,324 @@
+:root {
+    --titulo-font-family: 'Montserrat', sans-serif;
+    --parrafo-font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: minmax( max-content, 80px ) repeat(3, 1fr) 150px;
+    min-height: 100vh;
+    width: 100%;
+    }
+    
+header { 
+    grid-area: 1 / 1 / 2 / 6; 
+    display: flex;
+    justify-content: space-between;
+    background-color: #FA991C;
+    font-family: var(--titulo-font-family);
+}
+
+main { 
+    grid-area: 2 / 1 / 5 / 6; 
+    display: flex;
+    flex-direction: column;
+    background-color: #FBF3F2;
+    overflow: hidden;
+}
+
+footer { 
+    grid-area: 5 / 1 / 6 / 6; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #1C768F;
+    color: #fff;
+    font-family: var(--titulo-font-family);
+    font-size: 1.1rem;
+    padding: 60px 0 20px 0;
+    text-align: center;
+}
+
+.header-menu-icono {
+    position: absolute;
+    visibility: hidden;
+    height: 25px;
+    width: 25px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+nav {
+    min-height: min-content;
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    padding: 10px 0;
+    margin-left: 30px;
+    margin-top: 5px;
+    transition: all 0.5s;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 360px;
+    height: 50px;
+    flex: 2;
+}
+
+nav ul li {
+    list-style: none;
+    font-weight: bold;
+}
+
+nav ul div {
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav a:not(.nav-icono) {
+    display: inline-block;
+    padding: 10px 0;
+    width: calc(100% + 20px);
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid #ffffff00;
+    transition: all 0.6s;
+}
+
+nav a:hover:not(.nav-icono) {
+    background-color: #ffffff21;
+    border: 1px solid #fff;
+}
+
+.nav-icono {
+    display: inline-block;
+    color: #FA991C;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s;
+    
+}
+
+.nav-icono:hover {
+    transform: scale(1.1,1.1);
+    /* padding: 5px; */
+    box-shadow: rgba(17, 12, 46, 0.178) 0px 18px 30px 0px;
+}
+
+.nav-icono:hover  span {
+    color: #1C768F;
+}
+
+.nav-icono span {
+    position: relative;
+    left: -4px;
+}
+
+.notificacion-icono {
+    position: relative;
+    left: 22px;
+    top: -10px;
+    width: 9px;
+    height: 9px;
+    background-color: red;
+}
+
+.contenedor-buscar {
+    display: flex;
+    height: 40px;
+    min-width: 200px;
+    max-width: 300px;
+    flex: 1;
+    margin: 5px auto;
+}
+
+.contenedor-buscar input {
+    border: 1px solid #FA991C;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    border-right: none;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.contenedor-buscar input:hover {
+    transform: scale(1.05,1.05);
+    border: 1px solid #834e0a;
+}
+
+.contenedor-buscar input:focus {
+    background-color: #fcfcfc;
+    transform: scale(1.05,1.05);
+    border: 1px solid #834e0a;
+}
+
+.contenedor-buscar div {
+    width: 20%;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #FA991C;
+    border-left: none;
+    transition: all 0.5s;
+}
+
+.contenedor-buscar div:hover {
+    cursor: pointer;
+    transform: scale(1.05,1.05);
+    border: 1px solid #834e0a;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin: auto 0 auto 20px;
+}
+
+.main-bienvenida article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.main-bienvenida h1 {
+    font-size: 3rem;
+} 
+
+
+.main-bienvenida img {
+    width: 30%;
+    min-width: 350px;
+    object-fit: cover;
+}
+
+.main-petshop {
+    background-color: #f5f5f5;
+    margin: 30px 0;
+}
+
+.main-petshop article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-petshop a {
+    text-decoration: none;
+    color: #4e4e4e;
+    margin: 20px;
+    transition: all .5s;
+}
+
+.main-petshop a:hover {
+    transform: scale(1.1,1.1);
+}
+
+.main-petshop-tarjetas {
+    display: flex;
+    height: 150px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.main-petshop-tarjetas img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.main-petshop-tarjetas h2 {
+    font-size: 1.3rem;
+    font-family: var(--titulo-font-family);
+    color: #292929;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.main-petshop-tarjetas p {
+    font-family: var(--parrafo-font-family);
+    font-size: 1rem;
+    text-align: left;
+    margin: 0 10px;
+}
+
+.main-banner-gatos {
+    width: 100%;
+}
+
+.main-banner-gatos img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-banner-gatos h2 {
+    position: relative;
+    width: 50%;
+    font-size: 3rem;
+    color: #fff;
+    top: 200px;
+    left: 30px;
+}
+
+.main-banner-gatos a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2.3rem;
+    color: #FA991C;
+    font-weight: bold;
+    height: 50px;
+    top: 220px;
+    left: 40px;
+    transition: all .7s;
+}
+
+.main-banner-gatos a:hover {
+    text-decoration: underline;
+    transform: scale(1.1,1.1);
+}
+
+footer img {
+    height: 33px;
+    width: 33px;
+    transition: all 0.3s;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer img:hover {
+    transform: scale(1.2,1.2);
+    margin: 0 5px;
+}
+
+
